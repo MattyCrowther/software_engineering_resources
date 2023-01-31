@@ -1,0 +1,15 @@
+1) import pdb - Python debugger
+2) pdb.set_trace() -Sets start where you want to debug from.
+3) When it gets hit will begin and interactive debugger in the py session.
+5) Can use normal python code and will be evaluated in the scope of code in debugging process.
+Note: run demo.py to test it has the pdb set_trace inside
+
+Commands:
+l - shows line of code currently on and 10 lines of reference
+n - runs the line of code currently on and moves on.
+s - Step into line of code currently on.
+h - help documentation
+b - set breakpoint, need param eg amaze/runner:58 this is line 58 of the runner file in amaze. or method name etc
+c - contniue without debugging untill another breakpoint or set_trace is found.
+w - show stacktrace
+r - return, step out of this level.

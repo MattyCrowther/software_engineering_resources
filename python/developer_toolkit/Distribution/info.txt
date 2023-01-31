@@ -1,0 +1,4 @@
+1) python3 setup.py sdist - Creates a dist folder.
+2) pip install and the tar.gz file as param. - Could then send it to someone they use.
+3) python setup.py register - Or could upload it to pypy.org follow instructions.
+4) python setup.py sdist upload - This actually uploads the stuff

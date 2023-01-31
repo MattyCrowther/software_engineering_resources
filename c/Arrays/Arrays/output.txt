@@ -1,0 +1,12 @@
+
+Sorted data
+Item #0 : 1 
+Item #1 : 13 
+Item #2 : 25 
+Item #3 : 120 
+Item #4 : 123 
+Item #5 : 123 
+Item #6 : 435 
+Item #7 : 478 
+Item #8 : 689 
+Item #9 : 7980 

@@ -1,0 +1,22 @@
+Natural language processing - Natural-language processing (NLP) is an area of computer science and artificial intelligence concerned with the interactions between computers and human (natural) languages, 
+in particular how to program computers to fruitfully process large amounts of natural language data.
+Challenges in natural-language processing frequently involve speech recognition, natural-language understanding, and natural-language generation.
+
+ Basis of NLP:
+1) Tokenization - 	            Breaking down text into words and sentences.
+2) Stop word removal -         	    Remove connecting words such as the and it that dont provide much information.
+3) N-Grams -           	            Identify commonly occuring groups of words.
+4) Word sense Disambiguation -      Identiying the context in which the word occurs.
+5) Parts of Speech -                Identifying if a word is a noun, verb etc.
+6) Stemming -                       Remove end of words if have no meaning ie close and closed can get rid of d.
+
+
+Auto-summarizing / Abstract Extraction - The idea of being able to summarize a body of text.
+1)Rertrieve Text   - Download and parse the text from webpage
+2)Preprocess Text  - Tokenize text into sentences and or words, Remove stopwords.
+3)Extract sentenses - Compute frequencies of words, Compute significance scores of sentences, Rank sentences.
+
+Classifying text using machine learning
+1)Start with large num of articles.
+2)Identify underlying themes.
+3)Assign themes to new articles.

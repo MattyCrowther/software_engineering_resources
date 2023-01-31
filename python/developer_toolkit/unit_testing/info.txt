@@ -1,0 +1,2 @@
+1) Run a test: python3 -m unittest (This will run all test in dir and sub)
+    -v verbose gives more info

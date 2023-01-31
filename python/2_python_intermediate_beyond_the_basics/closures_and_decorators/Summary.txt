@@ -1,0 +1,16 @@
+1. def is executed at runtime (def function name():)
+2. functions inside other function commonly called local functions.
+3. A new local function is created every time the outer func is executed.
+4. Local functions can access names in other scopes by the LEGB rule.
+5. The enclosing scope for a local function includes the params of enclosing func.
+6. Local functions are useful for code organsiation and are similar to lambdas but are more general and powerful.
+7. Functions can return other functions including functions to find in their body.
+8. Closures allow local functions to access objects from scopes that have terminated.
+9. Closures ensure that objects from terminated scopes are not garbage collected.
+10. Functions with closures have special __closure__ attribute.
+11. Local functions and closures are keys to function factories which are functions to create other functions.
+12. Function decorators are used to modify existing functions without having to refactor.
+13. Decorators are callable objects which accept single callable object and return callable object.
+14. use @ to apply decortors to functions.
+15. Multiple decorators can be applied and go bottom to top.
+16. Dont use decorators if you dont need.

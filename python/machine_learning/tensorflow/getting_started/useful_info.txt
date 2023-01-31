@@ -1,0 +1,55 @@
+(a*b)+c
+a,b,c = tensor/data
+*,+ = Nodes
+
+Tensor - an n-dimensional array or list used in Tensor to represent all data
+	Defined by the properties Rank,Shape,Type
+
+	Rank - Dimensionality of a Tensor
+		Rank  Description    Example
+		0     Scalar         s=145
+		1     Vector         v=[1,2,4,6]
+		2     matrix         m=[[1,2,3],[1,2,6]]
+		3     3-Tensor(cube) c = [[[1,5,7],[5,3,4]],[[6,8,7],[3,4,5]]]]
+
+	Shape - Shape of data in Tensor - related to rank
+
+		Rank  Description    Example                                       Shape
+		0     Scalar         s=145					   []
+		1     Vector         v=[1,2,4,6]				   [5]
+		2     matrix         m=[[1,2,3],[1,2,6]]		           [2,3]
+		3     3-Tensor(cube) c = [[[1,5,7],[5,3,4]],[[6,8,7],[3,4,5]]]]    [3,2,3]
+	
+	Type - Type int for example
+		float32,float64
+		int8,int16,int32,int64
+		uint8,uint16
+		string
+		bool
+		complex64,complex128
+		qint8,qint16,quint8 (Quantitized values) Scaled to reduce size
+
+Gradient Descent -Adjust values to reduce error (Quickest way down - Quickest way to reduce error)
+Gradient descent is just one way -- one particular optimization algorithm -- to learn the weight coefficients of a linear regression model. 
+
+
+Debugging info
+TensorBoard webserver based gui for debugging and tracking info on tensor programs.
+tensorboard --logdir D:\Work\general\python_projects\machine_learning\tensorflow\getting_started\Course_Material\4-tensorflow-getting-started-m4-exercise-files\demos\tb_logs
+this will launch the webserver to see the tracking/debug
+Summary
+Can add:
+Name and Name scope
+Pring Values or tensorboard
+
+
+
+
+
+New notes:
+
+
+
+Tensor: An n-dimensional array or list used in Tensor to represent all data
+	Properties include Rank,Shape,Type
+	Tensor is data going through computational graph.

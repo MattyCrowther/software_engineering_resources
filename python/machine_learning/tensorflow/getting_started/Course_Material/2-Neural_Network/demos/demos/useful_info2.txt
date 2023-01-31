@@ -1,0 +1,22 @@
+MNIST Data:
+70,000 data points
+55,000 for training
+10,000 for test
+5,000 for validation
+
+Each data point contains 28x28 greyscale image
+Label - the digit, 0-9
+
+Helper routines on tensorflow site (we using these).
+
+Process:
+
+Prepare Data - MNIST Data
+inference- sum(x*weight) + bias -> activation
+Loss measurment - Cross Entropy
+Optimize to Minimize loss -  Gradient Descent Optimiser.
+
+What was wrong with SimpleMNIST:
+
+Lost any notion we was using images
+

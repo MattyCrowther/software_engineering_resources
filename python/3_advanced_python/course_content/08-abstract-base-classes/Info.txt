@@ -1,0 +1,27 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is an abstract base class?
+abstract- Cannot be meaningfully instantiated
+base - The target of an inheritence relationship from a subclass
+
+Liskov Substitutability - Code relying on the base class does not need to be modified for alternative subclasses.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Difference between abstract base class and interface
+
+Interfaces
+An interface is a contract: The guy writing the interface says, 
+"hey, I accept things looking that way", and the guy using the interface says 
+"OK, the class I write looks that way".
+
+An interface is an empty shell. 
+There are only the signatures of the methods, which implies that the methods do not have a body. 
+The interface can't do anything. It's just a pattern.
+
+Abstract classes
+Abstract classes, unlike interfaces, are classes. They are more expensive to use, because there is a look-up to do when you inherit from them.
+
+Abstract classes look a lot like interfaces, but they have something more: You can define a behavior for them. It's more about a guy saying, 
+"these classes should look like that, and they have that in common, so fill in the blanks!".
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------

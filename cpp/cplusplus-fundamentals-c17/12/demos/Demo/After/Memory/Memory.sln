@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Memory", "Memory\Memory.vcxproj", "{FFDF9855-29D1-4A7B-9F98-F6F0820A5382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFDF9855-29D1-4A7B-9F98-F6F0820A5382}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFDF9855-29D1-4A7B-9F98-F6F0820A5382}.Debug|Win32.Build.0 = Debug|Win32
+		{FFDF9855-29D1-4A7B-9F98-F6F0820A5382}.Release|Win32.ActiveCfg = Release|Win32
+		{FFDF9855-29D1-4A7B-9F98-F6F0820A5382}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

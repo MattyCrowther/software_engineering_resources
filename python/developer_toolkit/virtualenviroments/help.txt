@@ -1,0 +1,5 @@
+) sudo pip install virtualenv - Install venv
+)virtualenv amaze_linux -Create venv
+). amaze_linux/bin/activate -Launch Venv
+)pip install /package_name/
+)

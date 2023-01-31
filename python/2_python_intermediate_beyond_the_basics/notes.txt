@@ -1,0 +1,18 @@
+Modules and Packages:
+   A module usually means a single source file
+   A package is a special module which contains other modules.
+   Packages are generally directories
+   Modules are generally single files
+   
+   When a Module is imported uses sys.path
+
+   The PYTHONPATH enviroment variable listing paths added to sys.path
+   So Basically just export PYTHONPATH=whateverpackagename and it will be added to searchdir 
+
+
+__nAME___
+   The __ means standard names.
+
+   
+self or this
+   this must always be in the constructor of a class, self is not a keyword can be called anything, works the same as this in java

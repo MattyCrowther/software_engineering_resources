@@ -1,0 +1,35 @@
+Built-in help
+1)help(function_name) or ?function_name -- Shows the help/man page for the function provided
+2)help.search("term") or ??"term" --Searches through mans looking for matches
+3)example(function_name) -- Shows an example of a function in the console. (if a example is available)
+4)demo(optional_func_name) -- If empty shows all the demos available for all packages used. If param then particlar one.
+4.1)demo()
+4.2)demo(package = .packages(all.available = TRUE))
+4.3)demo(package = "graphics") #This is for package
+4.4)demo(graphics) #This is for particular function
+5)Vignette
+5.1)vignette() #Lists all vignettes in attached packages
+5.2)vignette(package = packages(all.available = TRUE)) #List all vignettes in all installed packages
+5.3)vignette(package = "parralel") #List all vignettes in parralel package
+5.4)vignette('parralel',package = 'parralel') # Show vignette for parallel
+
+6) Web search
+6.1)From R console
+6.1.1)RSiteSearch("arithmetic mean") #Search on http://search.r-project.org
+6.1.2)RSiteSearch("{arithmetic mean}") #Exact search
+6.1.3)install.packages("sos") #Install package
+6.1.4)library(sos) # Load package
+6.1.5)findFn("{arithmetic mean}") # Tabulates the results to see in easier to view format.
+6.1.6)findFn("{arithmetic mean}",maxPages = 2)
+6.1.7)???"{arithmetic mean}"(2) #Shortcut of above.
+6.2)External
+6.2.1)Mailing Lists
+6.2.1.1)https://www.r-project.org/mail.html
+6.2.2)Forums
+6.2.2.1) Stack overflow + sibling Cross Validated
+6.2.2.2) Nabble
+6.2.3)Blogs
+6.2.3.1) R-Bloggers
+6.2.3.2) Revelution Analytics Blog
+6.2.3.3) R-Statistics blog
+6.2.3.4) R-Data mining blog

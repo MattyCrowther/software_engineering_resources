@@ -1,0 +1,5 @@
+﻿  Comparison.cpp
+c:\working\pluralsight\redo c++ fund\module 7 - operators\demo\end\comparison\comparison\comparison.cpp(17): warning C4706: assignment within conditional expression
+c:\working\pluralsight\redo c++ fund\module 7 - operators\demo\end\comparison\comparison\comparison.cpp(28): warning C4706: assignment within conditional expression
+  Comparison.vcxproj -> C:\working\pluralsight\redo c++ fund\Module 7 - Operators\Demo\End\Comparison\Debug\Comparison.exe
+  Comparison.vcxproj -> C:\working\pluralsight\redo c++ fund\Module 7 - Operators\Demo\End\Comparison\Debug\Comparison.pdb (Partial PDB)

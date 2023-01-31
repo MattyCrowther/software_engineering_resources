@@ -1,0 +1,25 @@
+What we have learned:
+	1.Comprehensions can process more than one input sequence
+	2.Compreshensions work like nested for loops.
+	3.Later clauses in comprehension can access variables bound before.
+	4.Can contain if staements.
+
+	5.Map calls a function for each element in its input sequence
+	6.Map returns an iterable object not a fully evaluated collection
+	7.Map results are lazily evalulated Meaning you must evaluate yourself.
+	8.You must provide as mnay input sequences to map as the callable object has params.
+
+	9.Filter selects values from an input sequence which match a specified criteria.
+	10.Filter passes each input as argument
+	11.Also produces output lazily.
+
+	12.Reduce culmativley applies a function to the elements of an input sequence.
+	13.Calls the input function with 2 args, the result of previous and next element.
+	14.Can add optional initial arg
+
+	15. Iterator Protocol:
+		next(iterator)     iterator.__next__()
+
+	16. Iterable Protocol:
+		iter(iterable)    iterable.__iter__()
+						  iterable.__getitem__(index)

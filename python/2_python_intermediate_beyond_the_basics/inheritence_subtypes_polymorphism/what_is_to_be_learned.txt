@@ -1,0 +1,6 @@
+1.Sub classes have all methods of base
+2.If a sub class doesnt have __init__ then base class called automatically
+3.It often best to explicitley call the base class initialiser from a sub classes initialiser
+4.isinstance(r,int) is a runtime type checker
+5.Multiple inheritence means having more than one base class. def sub(base1,base2)
+6.MRO- Method Resolution Order to workout base classes etc.

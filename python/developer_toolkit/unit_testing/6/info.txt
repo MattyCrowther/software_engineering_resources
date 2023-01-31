@@ -1,0 +1,3 @@
+sudo python -m pytest --cov-report term-missing --cov tennis
+sudo python -m pytest --cov-html term-missing --cov tennis (For coverage example inside pytest coverage)
+

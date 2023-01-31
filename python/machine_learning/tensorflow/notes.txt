@@ -1,0 +1,123 @@
+https://www.tensorflow.org/api_docs/python/
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Computational Graph:
+(a*b)+c
+TensorFlow uses a dataflow graph to represent your computation in terms of the dependencies between individual operations. 
+This leads to a low-level programming model in which you first define the dataflow graph, then create a TensorFlow session to run parts of the graph across a set of local and remote devices.
+Graphs in TF are represented as directed-acyclic graphs, however because the graph may be ran through again with more refined data will be cyclical.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Nodes:
+*,+ = Nodes
+Represent units of computation.
+Nodes in a graph are computations/operations.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Tensors:
+a,b,c = tensor/data
+Edges are tensors/data
+An n-dimensional array or list used in Tensor to represent all data
+Tensor is data going through computational graph.
+Defined by the properties Rank,Shape,Type
+
+Rank-
+Rank is the number of dimensions in a tensor
+Rank - Dimensionality of a Tensor
+	Rank  Description    Example
+	0     Scalar         s=145
+	1     Vector         v=[1,2,4,6]
+	2     matrix         m=[[1,2,3],[1,2,6]]
+	3     3-Tensor(cube) c = [[[1,5,7],[5,3,4]],[[6,8,7],[3,4,5]]]]
+
+Shape-
+Shape is the number of elements in each dimensions
+Shape - Shape of data in Tensor - related to rank
+	Rank  Description    Example                                       Shape
+	0     Scalar         s=145					   []
+	1     Vector         v=[1,2,4,6]				   [5]
+	2     matrix         m=[[1,2,3],[1,2,6]]		           [2,3]
+	3     3-Tensor(cube) c = [[[1,5,7],[5,3,4]],[[6,8,7],[3,4,5]]]]    [3,2,3]
+
+Type - Type int for example
+	float32,float64
+	int8,int16,int32,int64
+	uint8,uint16
+	string
+	bool
+	complex64,complex128
+	qint8,qint16,quint8 (Quantitized values) Scaled to reduce size
+
+Placeholder- A value that is not known untill runtime.
+tf.placeholder(
+    dtype,
+    shape=None,
+    name=None
+)
+Constant- A value that will not change throughout computation
+tf.constant(
+    value,
+    dtype=None,
+    shape=None,
+    name='Const',
+    verify_shape=False
+)
+Variable- A variable maintains state in the graph across calls to run().
+tf.Variable(
+   <initial-value>, 
+   name=<optional-name>
+)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Tensorboard:
+TensorBoard webserver based gui for debugging and tracking info on tensor programs.
+tensorboard --logdir="m1_example1" where logdir is the fileWritten to get tfboard
+Name-
+If names are not used then values in tensorboard have default names which are very difficult to debug.
+x = tf.placeholder(tf.float32, name="x")
+y= tf.valiable(0.5, tf.float32, name="y")
+z= tf.constant(1.0, tf.float32, name="z")
+Names allow
+
+Name scope-
+Allow blocks of code to be named to that they can be visualised inside of tensorboard indiviudally.
+A contect manager for use when defining a python of.
+def my_op(a, b, c, name=None):
+  with tf.name_scope(name, "MyOp", [a, b, c]) as scope:
+    a = tf.convert_to_tensor(a, name="a")
+    b = tf.convert_to_tensor(b, name="b")
+    c = tf.convert_to_tensor(c, name="c")
+    # Define some computation that uses `a`, `b`, and `c`.
+    return foo_op(..., name=scope)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Sessions:
+Sessions must be ran to run Tensorflow operations, launches the computational graph and all computation.
+Before sessions are ran only values can be declared etc. 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Gradient Descent -Adjust values to reduce error (Quickest way down - Quickest way to reduce error)
+Gradient descent is just one way -- one particular optimization algorithm -- to learn the weight coefficients of a linear regression model. 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+MNIST Data:
+70,000 data points
+55,000 for training
+10,000 for test
+5,000 for validation
+
+
+Each data point contains 28x28 greyscale image
+Label - the digit, 0-9
+
+Process:
+
+Prepare Data - MNIST Data
+inference- sum(x*weight) + bias -> activation
+Loss measurment - Cross Entropy
+Optimize to Minimize loss -  Gradient Descent Optimiser.
+-------------------------------------------------------------------------------------------------------------------------------------------------
